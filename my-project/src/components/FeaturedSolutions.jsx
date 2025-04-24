@@ -3,11 +3,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const solutions = [
-  { title: 'HCI and Virtualization', text: 'Empowering enterprises to capture the full benefits of HCI', img: '/assets/solution1.jpg' },
-  { title: 'Database and Analytics', text: 'Accelerating queries and transactions to transform data into actionable insights', img: '/assets/solution2.jpg' },
-  { title: 'Supercomputing and Research', text: 'Harnessing the potential of Al and Exascale-class supercomputing to advance scientific research', img: '/assets/solution3.jpg' },
-  { title: 'Financial Services', text: 'Delivering highly performant and efficient solutions to support core and Al-powered FSI workloads', img: '/assets/solution4.jpg' },
-  { title: 'Product Design', text: 'Integrating Al and accelerating CAE simulations for better product designs and more timely results', img: '/assets/solution5.jpg' },
+  { title: 'HCI and Virtualization', text: 'Empowering enterprises to capture the full benefits of HCI', img: '/src/assets/solution1.jpg' },
+  { title: 'Database and Analytics', text: 'Accelerating queries and transactions to transform data into actionable insights', img: '/src/assets/solution2.jpg' },
+  { title: 'Supercomputing and Research', text: 'Harnessing the potential of Al and Exascale-class supercomputing to advance scientific research', img: '../assets/solution3.jpg' },
+  { title: 'Financial Services', text: 'Delivering highly performant and efficient solutions to support core and Al-powered FSI workloads', img: '/src/assets/solution4.jpg' },
+  { title: 'Product Design', text: 'Integrating Al and accelerating CAE simulations for better product designs and more timely results', img: '/src/assets/solution5.jpg' },
 ];
 
 export default function FeaturedSolutions() {
@@ -28,7 +28,6 @@ export default function FeaturedSolutions() {
     >
       <h2 className="text-3xl font-bold mb-8 text-center">Featured Solutions</h2>
       <div className="relative max-w-4xl mx-auto">
-        {/* Tombol Panah Kiri */}
         <button
           onClick={prev}
           className="absolute left-6 top-1/2 transform -translate-y-1/2 text-5xl font-bold text-white border-2 border-white rounded-full w-16 h-16 flex items-center justify-center hover:text-gray-400 hover:border-gray-400"
@@ -52,7 +51,6 @@ export default function FeaturedSolutions() {
             <button className="text-amdBlue font-semibold block mx-auto">Learn More</button>
           </div>
         </div>
-        {/* Tombol Panah Kanan */}
         <button
           onClick={next}
           className="absolute right-6 top-1/2 transform -translate-y-1/2 text-5xl font-bold text-white border-2 border-white rounded-full w-16 h-16 flex items-center justify-center hover:text-gray-400 hover:border-gray-400"
